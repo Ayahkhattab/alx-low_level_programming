@@ -3,7 +3,7 @@
 
 /**
  * main - Prints a Fizz Buzz program
- * return: Always 0 (Success)
+ * Return Always 0 (Success)
  */
 
 int main(void)
@@ -27,7 +27,7 @@ int main(void)
 	}
 	else
 	{
-	printf(" % d", x);
+	printf("%d", x);
 	}
 	if (x != 100)
 	{
