@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * puts_half - Entry point
- * Description: to check if letter is uppercase
- * @str: string`
- * Return: no return
+ * puts_half - prints half of a string 
+ * @str: The string to print
+ * Return: void
  */
 
 void puts_half(char *str)
