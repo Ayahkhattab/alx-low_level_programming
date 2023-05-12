@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * _atoi - converts a string to an integer
  * @s: string to be converted
@@ -35,7 +36,7 @@ int _atoi(char *s)
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 			f = 0;
-}
+		}
 		i++;
 	}
 
@@ -69,4 +70,4 @@ int main(int argc, char *argv[])
 	printf("%d\n", result);
 
 	return (0);
-}			
+}
