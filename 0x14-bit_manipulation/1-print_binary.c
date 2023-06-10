@@ -1,22 +1,23 @@
 #include "main.h"
-/*
-* print_binary - prints a number as binary string
-* @n: the number to print
-*
-* Return: void
+/**
+* print_binary - prints binary equivalent of decmial number
+* @n:number to print in binary
 */
 void print_binary(unsigned long int n)
 {
-int bit = sizeof(n) * 8, printed = 0;
-while (bit)
+int i, count = 0;
+unsigned long int current;
+for (i = 63; i > 0; i--)
 {
-if (n & 1L << --bit)
+current = n >> i;
+if (current & 1)
+{
 _putchar('1');
-printed++;
+count++;
 }
-else if (printed)
+else if (count)
 _putchar('0');
 }
-if (!printed)
+if (!count)
 _putchar('0');
 }
